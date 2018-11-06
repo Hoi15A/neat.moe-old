@@ -1,0 +1,44 @@
+extends layout
+
+block content
+  section.section
+    .container
+      .tile.is-ancestor
+        .tile.is-4.is-vertical.is-parent
+          .tile.is-child.box
+            .columns
+              .column.is-one-third
+                figure.image
+                  img.is-rounded(src="/images/wigglytuff.png", alt="Wigglytuff")
+              .column
+                p.title Hi
+                p.subtitle
+                  | My name is Austin and this is my site.
+            
+          .tile.is-child.box
+            p.title Profiles
+            ul.social-list
+              li
+                a(href="https://github.com/Hoi15A" target="_blank") 
+                  i.fab.fa-github-alt.fa-fw.social-icon
+                  | GitHub
+              li
+                a(href="https://keybase.io/hoi_a" target="_blank") 
+                  i.fab.fa-keybase.fa-fw.social-icon
+                  | Keybase
+              li
+                a(href="https://discord.neat.moe" target="_blank") 
+                  i.fab.fa-discord.fa-fw.social-icon
+                  | Discord
+        .tile.is-parent
+          .tile.is-child.box
+            p.title About
+            p Hey there! My name ist Austin and I'm a programmer from Switzerland.
+            br
+            p I mostly create dumb little chatbots using JavaScript but also enjoy figuring out more useful stuff.
+            p You can find most of my work over on GitHub.
+            br
+            p I'm available through Discord or you can reach me by writing an email to: 
+              span.has-text-info myname @ thisdomain
+            p
+              em  (if you want to be extra fancy you can encrypt the message using my pgp key on Keybase)
