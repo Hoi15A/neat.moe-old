@@ -40,3 +40,31 @@ html {
     margin-top: auto;
   }
 }
+
+figure.image.murkrow {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height: 377.6px;
+  overflow: hidden;
+  video {
+    z-index: 1;
+  }
+}
+
+figure.image.murkrow::before {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("/images/murkrow.png");
+
+  @bpx: 10px;
+  @bright: 70%;
+  -webkit-filter: blur(@bpx) brightness(@bright);
+  -moz-filter: blur(@bpx) brightness(@bright);
+  -o-filter: blur(@bpx) brightness(@bright);
+  -ms-filter: blur(@bpx) brightness(@bright);
+  filter: blur(@bpx) brightness(@bright);
+}

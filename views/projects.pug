@@ -59,6 +59,32 @@ block content
         .column.is-one-third
           .card.card-equal-height
             .card-image
+              figure.image.murkrow
+                  video(src="/videos/spoilbot.mp4", muted, autoplay, loop, poster="/images/murkrow.png")
+            .card-content
+              .media
+                .media-left
+                  figure.image.is-48x48
+                    img(src='/images/murkrow.png', alt='Murkrow')
+                .media-content
+                  p.title.is-4 
+                    a(href="https://github.com/Hoi15A/spoilbot", target="_blank") Spoilbot
+                  p.subtitle.is-6 Spoilbot#6163
+              .content
+                | When Discord released the spoilers feature people started using them way too much. This bot fixes that issue by adding an uncover button.
+                br 
+                | Available on 
+                a(href="https://github.com/Hoi15A/spoilbot", target="_blank") GitHub 
+                | and my 
+                a(href="https://discord.neat.moe", target="_blank") Discord guild.
+                br
+                a(href='https://nodejs.org/en/', target="_blank") #nodeJS 
+                a(href='https://discordapp.com/', target="_blank") #discord
+
+      .columns        
+        .column.is-one-third
+          .card.card-equal-height
+            .card-image
               iframe(src="/", width="100%", height="400px") 
             .card-content
               .media
@@ -76,31 +102,5 @@ block content
                 a(href="https://github.com/Hoi15A/neat.moe", target="_blank") GitHub 
                 br
                 a(href='https://nodejs.org/en/', target="_blank") #nodeJS 
-                a(href='https://expressjs.com/', target="_blank") #express 
-      //-
-        ! For more than 3 cards make new columns
-        .columns        
-          .column.is-one-third
-            .card.card-equal-height
-              .card-image
-                figure.image
-                  img(src='/images/cards/discord-bot.png', alt='Image of Discord bot being used with the >>pkfuse command')
-              .card-content
-                .media
-                  .media-left
-                    figure.image.is-48x48
-                      img(src='/images/wigglytuff.png', alt='Wigglytuff')
-                  .media-content
-                    p.title.is-4 
-                      a(href="https://github.com/Hoi15A/simple-discord-bot", target="_blank") Discord bot
-                    p.subtitle.is-6 Wigglytuff#2889
-                .content
-                  | A Discord bot that has a bunch of different functions and is made to be somewhat modular.
-                  br 
-                  | Available on 
-                  a(href="https://github.com/Hoi15A/simple-discord-bot", target="_blank") GitHub 
-                  | and my 
-                  a(href="https://discord.neat.moe", target="_blank") Discord guild.
-                  br
-                  a(href='https://nodejs.org/en/', target="_blank") #nodeJS 
-                  a(href='https://discordapp.com/', target="_blank") #discord
+                a(href='https://expressjs.com/', target="_blank") #express
+          
