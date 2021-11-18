@@ -1,11 +1,11 @@
-var createError = require('http-errors')
-var express = require('express')
-var path = require('path')
-var cookieParser = require('cookie-parser')
-var lessMiddleware = require('less-middleware')
-var logger = require('morgan')
+const createError = require('http-errors')
+const express = require('express')
+const path = require('path')
+const cookieParser = require('cookie-parser')
+const lessMiddleware = require('less-middleware')
+const logger = require('morgan')
 
-var app = express()
+const app = express()
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
@@ -18,13 +18,11 @@ app.use(cookieParser())
 app.use(lessMiddleware(path.join(__dirname, 'public')))
 app.use(express.static(path.join(__dirname, 'public')))
 
-var indexRouter = require('./routes/index')
-var projectsRouter = require('./routes/projects')
-var friendsRouter = require('./routes/friends')
+const indexRouter = require('./routes/index')
+const projectsRouter = require('./routes/projects')
 
 app.use('/', indexRouter)
 app.use('/', projectsRouter)
-app.use('/', friendsRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
